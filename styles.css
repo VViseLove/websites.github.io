@@ -1,0 +1,56 @@
+ body {
+     background-image: url("HellsingAlucard.jpg");
+     background-repeat: no-repeat;
+     background-size: 100%; 
+ }
+ div.absolute 
+ {
+    display: flex;
+    flex-direction:column;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 5%;
+    border-radius: 10px; 
+    padding: 3%;
+ }
+ div.non-absolute
+ {  
+    display:flex;
+    flex-direction: column;
+    /* position: ;          */
+    text-align: center;
+    color: whitesmoke;
+    opacity: 1;
+ }
+h
+{
+    font-family:sans-serif
+}
+p
+{
+    font-family:serif;
+    font-size: large;
+}
+*
+{
+    color: whitesmoke;
+    opacity: 1;
+}
+.button 
+{
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: rgb(28, 28, 28);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+.button:hover 
+{
+      background-color: rgba(46, 46, 46, 0.8); 
+}
