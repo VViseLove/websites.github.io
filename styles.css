@@ -1,48 +1,72 @@
  body {
-     background-image: url("HellsingAlucard.jpg");
-     background-repeat: no-repeat;
-     background-size: 100%; 
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+ h1
+ {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
  }
- div.absolute 
+ *
+{
+    color: whitesmoke;
+    opacity: 1;
+}
+p{
+    text-align: center;
+}
+ #about
+ {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.8)), url("HellsingAlucard.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    background-position: unset;
+    background-attachment:fixed;
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    min-height: 100vh;
+    /* position: sticky;
+    z-index: 1; */
+ }
+ div.background 
  {
     display: flex;
-    flex-direction:column;
     position: absolute;
-    left: 20%;
-    top: 10%;
-    background-color: rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    width: 30%;
+    top: 20%;
+    left:10%;
     border: 5%;
     border-radius: 10px; 
     padding: 3%;
  }
- div.non-absolute
+ div.background-inside
  {  
     display:flex;
     flex-direction: column;
-    /* position: ;          */
     text-align: center;
     color: whitesmoke;
     opacity: 1;
  }
-h
+.container
 {
-    font-family:sans-serif
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
-p
-{
-    font-family:serif;
-    font-size: large;
-}
-*
-{
-    color: whitesmoke;
-    opacity: 1;
-}
+
 .button 
 {
       display: inline-block;
-      padding: 10px 20px;
-      background-color: rgb(28, 28, 28);
+      padding: 15px 10px;
+      background-color: rgb(17, 17, 17);
       color: white;
       text-decoration: none;
       border-radius: 5px;
@@ -52,5 +76,42 @@ p
   }
 .button:hover 
 {
-      background-color: rgba(46, 46, 46, 0.8); 
+      background-color:  rgba(60, 0, 0, 0.8); 
+}
+
+#HeroesSECTION
+{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(16, 16, 16);
+    height: auto;
+    width: auto;
+} 
+#HeroesDIV
+{
+    display:flex;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+}
+.container2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    width: auto;
+
+    background-color: rgba(69, 0, 0, 0.723);
+
+    border: 5%;
+    border-radius: 8px; 
+    padding: 1.5%;
+    margin: 0.5%;
+
+    text-wrap:wrap;
 }
