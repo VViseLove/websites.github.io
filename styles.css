@@ -1,6 +1,6 @@
  body {
     font-family: "Cormorant Unicase", serif;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
     margin: 0px;
     scroll-behavior: smooth;
@@ -26,7 +26,7 @@ p{
     opacity: 1;
     background: linear-gradient(to left, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.8)), url("HellsingAlucard.jpg");
     background-repeat: no-repeat;
-    background-size: 100%; 
+    background-size:cover; 
     background-position: unset;
     background-attachment:fixed;
     font-family: "Cormorant Unicase", serif;
@@ -34,8 +34,8 @@ p{
     font-style: normal;
     font-size: 20px;
     min-height: 100vh;
-    /* position: sticky;
-    z-index: 1; */
+    /* position: sticky; */
+    z-index: 0; 
  }
  div.background 
  {
@@ -82,6 +82,19 @@ p{
     background-color:  rgba(60, 0, 0, 0.8); 
     transition: transform 0.5s;
 }
+#scrollButton { 
+    position: absolute; 
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+} 
+#scrollButton img { 
+    width: 50px; 
+    height: 50px; 
+}
 
 #HeroesSECTION
 {
@@ -93,17 +106,22 @@ p{
     width: auto;
     color: whitesmoke;
     opacity: 1;
+    padding-bottom:2.5%;
+    z-index: 1;
 } 
 #HeroesDIV
 {
     display:flex;
-    flex-direction: unset;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content: center;
     align-items: center;
+    margin-top: 0px;
+   
 }
 .container2
 {
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,9 +135,13 @@ p{
     border: 5%;
     border-radius: 8px; 
     padding: 1.5%;
-    margin: 0.5%;
+    margin: 1.5%;
     padding-bottom: 0.5%;
-    
+    margin-top: 0px;
+}
+.gif
+{
+    border-radius: 8px;
 }
 .container2:hover
 {
@@ -137,54 +159,140 @@ b{
 }
 #TechnologiesSECTION
 {
-    background-color: rgba(82, 0, 0, 0.723);
+    background-color: #2b2b2b;
     padding: 20px;
     background-color: #222;
-    /* color: #fff; */
+    color: #fff;
     font-family: "Cormorant Unicase", serif;
     font-weight: 600;
-   
+    padding-top: 0px;
+    z-index: 2;
+    padding-bottom: 3%;
 }
 #TechnologiesSECTION b
 {
-    font-size: 20px;
+    font-weight:700;
+    font-size: 22px;
+    color: #ff6347;
 }
 .WeaponsGridContainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
-    color: rgb(55, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .Weapon {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center; 
+    align-content: center;
     flex-direction: column;
-    background-color: #f0d4d4;
+    /* background-color: #362121; */
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 10px; 
+    background-color: #363636; /* Темный фон для карточек */ 
+    color: #f0f0f0; /* Светлый текст */   
+    padding: 20px; /* Добавим больше отступов */ 
+    transition: transform 0.3s, background-color 0.3s;
 }
 .Weapon:hover{
-    transform: translateY(-5px);
-    background-color: whitesmoke;
+    transform: translateY(-10px);
+    /* background-color: rgb(106, 16, 16); */
+    background-color: #484848;
     transition: background-color 0.3s;
     transition: transform 0.6s;
-}
-.Weapon img {
-    width: 90%;
-    height: auto;
-    margin: 0 auto; 
 }
 
 .Weapon p {
     margin: 10px 0 0 0; 
     text-align: center; 
 }
+
 .image1
 {
     display: flex;
     justify-content: center;
+    align-items: center;
+    border-radius: 100%; 
+    overflow: hidden;
+    /* width:200px;
+    height:200px; */
+}
+.image1 img{
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 8px;
+}
+header{
+    background-color: rgb(60, 0, 0);
+}
+nav { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 20px; 
+    position: sticky;
+} 
+.logo { 
+    font-size: 1.5em; 
+    color: whitesmoke;
+} 
+
+.nav-links { 
+    list-style-type: none; 
+    display: flex; 
+    padding: 0;
+    border: 5px;
+} 
+
+.nav-links li { 
+    margin-left: 20px;  
+} 
+
+.nav-links a { 
+    color: white; 
+    text-decoration: none; 
+    font-size: 1em; } 
+
+.menu-toggle { 
+    display: none; 
+    flex-direction: column; 
+    cursor: pointer; 
+} 
+
+.menu-toggle .bar { 
+    width: 25px; 
+    height: 3px; 
+    background-color: rgb(255, 255, 255); 
+    margin: 4px 0; 
+} 
+
+    /* .nav-links.show { 
+        display: flex; 
+    } */
+@media (max-width: 800px) { 
+    .nav-links { 
+        display: none; 
+        flex-direction: column; 
+        width: 100%; 
+        position: absolute; 
+        top: 33px; 
+        left: 0; 
+        background-color: #333; 
+        margin-top: 0% ;
+    } 
+    .nav-links li { 
+        text-align: center; 
+        margin: 10px 0;
+    } 
+    .menu-toggle { 
+        display: flex; 
+    } 
+    .nav-links.show { 
+        display: flex;
+    }
 }

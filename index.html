@@ -10,6 +10,22 @@
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
+        
+        <header> 
+            <nav> 
+                <div class="logo"></div> 
+                <div class="menu-toggle" id="mobile-menu"> 
+                    <span class="bar"></span> 
+                    <span class="bar"></span> 
+                    <span class="bar"></span> 
+                </div> 
+                    <ul class="nav-links">  
+                        <li><a href="#about">Главная</a></li> 
+                        <li><a href="#HeroesSECTION">О персонажах</a></li> 
+                        <li><a href="#TechnologiesSECTION">Оружие героев</a></li> </ul> 
+            </nav> 
+        </header>
+
        <section id="about">
             <div class="background">
                 <div class="background-inside">
@@ -22,6 +38,9 @@
                     </div>
                 </div>
             </div>
+            <!-- <div id="button-div"> -->
+                <button id="scrollButton"> <img src="arrowdown.png" alt="Scroll Down"> </button>
+            <!-- </div> -->
         </section>
     <section id="HeroesSECTION">
         <div style="display: flex; justify-content: center;">
@@ -70,7 +89,7 @@
                     <img src="major1.gif" alt="major" width="380vw" height="190vh">
                 </div>
                 <div class="HeroText">
-                    <p><b>Майор</b><br>Rомандир нацистской организации Миллениум,<br> состоящей из искусственных вампиров</p>
+                    <p><b>Майор</b><br>Командир нацистской организации Миллениум,<br> состоящей из искусственных вампиров</p>
                 </div>
             </div>
         </div>
@@ -83,12 +102,12 @@
 
             <div class="Weapon">
                 <div class="image1">
-                    <img src="rapier.png" alt="rapier" width="" height="">
+                    <img src="integragun.jpg" alt="rapier" >
                 </div>
                 <div> 
                     <p>
-                        Сабля семьи Хеллсинг в опытных руках <b>Интегры</b>
-                         беспощадно используется против любого, кто противостоит ей.
+                        <b>Интегра</b><br> палаш и пистолет в ее руках
+                        беспощадны против любого, кто ей противостоит.
                     </p>
                 </div>
                
@@ -96,12 +115,11 @@
 
             <div class="Weapon">
                 <div class="image1">
-                    <img src="pistols.png" alt="pistols" width="" height="">
+                    <img src="hellsing-hellsing-pistolet.webp" alt="pistols" width="" height="">
                 </div>
                 <div>
-                    <p><b>Алукард</b>, кроме сверхчеловеческих способностей,
-                    использует два пистолета, Касулл и Шакал, с пулями, 
-                    отлитыми из священного серебряного креста.
+                    <p><b>Алукард</b><br> вампир, использующий пистолеты Касулл и Шакал, с серебряными пулями, 
+                    отлитыми из священного креста.
                     </p>
                 </div>
                 
@@ -109,42 +127,41 @@
 
             <div class="Weapon">
                 <div class="image1">
-                    <img src="hot.png" alt="magic" width="" height="">
+                    <img src="strong-and-fierce.jpg" alt="magic" width="" height="">
                 </div>
                <div>
                 <p>
-                    <b>Виктория Серас</b>, будучи всю жизнь робкой девушкой, получает
-                    способности, благодаря которым косит врагов толпами.
+                    <b>Виктория Серас</b><br> будучи всю жизнь робкой девушкой, получает
+                    способности, благодаря которым толпами косит врагов.
                 </p>
                </div>
             </div>
 
             <div class="Weapon">
                 <div class="image1">
-                    <img src="katana.png" alt="katana" width="" height="">
+                    <img src="blades.png" alt="katana" width="" height="">
                 </div>
                 <div>
                     <p>
-                        <b>Александр Андерсен</b>, Генератор, в арсенале имеет
-                        ножи из особого сплава, бесконечные страницы священного писания,
-                        а также непоколебимую веру в своего покровителя. 
+                        <b>Александр Андерсен</b><br>ведомый верой в Господа, в арсенале имеет
+                        ножи из особого сплава и бесконечные страницы священного писания 
                     </p>
                    </div>
             </div>
 
             <div class="Weapon">
                 <div class="image1">
-                    <img src="dracula.png." alt="vampire" width="" height="">
+                    <img src="zombies.jpg" alt="vampire" width="" height="">
                 </div>
                 <div>
                     <p>
-                        <b>Майор</b>, безумец, что собрал свою армию порабощенных людей, 
-                        превращенных в вампиров.
+                        <b>Майор</b><br> нацист-безумец, который собрал свою армию из порабощенных и
+                        превращенных в вампиров людей.
                     </p>
                 </div>
             </div>
         </div>
     </section>
-
+    <script src="script.js"></script>
     </body>
 </html>
