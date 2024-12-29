@@ -333,7 +333,8 @@ button:hover {
 } 
 .review { 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    /* align-items: center; */
     background-color: rgba(55, 0, 0, 0.621);
     border: 1px solid #ddd; 
     padding: 10px; 
@@ -343,14 +344,24 @@ button:hover {
 .review b
 {
     justify-content: flex-start;
-    margin: 10px;
+    margin: 5px;
 }
 .review p
 {
     justify-content: flex-start;
-    
+    margin: 5px;
 }
-
+.created{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.insider
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
 /* МЕДИА-ЗАПРОСЫ */
 @media (max-width: 769px) { 
     .nav-links { 

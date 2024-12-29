@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     data.data.submissions.forEach(submission => {
                         const reviewElement = document.createElement('div');
                         reviewElement.classList.add('review');
-                        reviewElement.innerHTML = `<p><b>${submission.name}:</b>${submission.message}</p>`;
+                        reviewElement.innerHTML = `<div class="created"><b>${submission.name}:</b></div><div class="insider"><p>${submission.message}</p></div>`;
                         reviewsContainer.appendChild(reviewElement);
                     });
                 } else {
