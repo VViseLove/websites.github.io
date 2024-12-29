@@ -176,7 +176,7 @@ p{
     font-weight: 600;
     padding-top: 0px;
     z-index: 2;
-    padding-bottom: 3%;
+    padding-bottom: 5%;
 }
 #TechnologiesSECTION b
 {
@@ -278,9 +278,84 @@ nav {
     height: 3px; 
     background-color: rgb(255, 255, 255); 
     margin: 4px 0; 
+    border-radius: 5px;
 } 
+#feedback
+{
+    opacity: 1;
+    background: url("fire2.gif");
+    background-repeat: no-repeat;
+    background-size:cover; 
+    background-position: unset;
+    background-attachment:fixed;
+    background-color: rgb(16, 16, 16);
+    padding: 20px;
+    color: #fff;
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 600;
+    padding-top: 0px;
+    padding-bottom: 5%;
+}
+form { 
+    display: flex; 
+    flex-direction: column; 
+    max-width: 500px; 
+    margin: 0 auto; 
+} 
+label { 
+    margin: 10px 0 5px; 
+} 
+input, textarea { 
+    background-color: rgba(255, 255, 255, 0.784);
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+button { 
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    background-color: rgb(74, 0, 0);
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 10px; 
+    
+} 
+button:hover { 
+    background-color:  rgba(60, 0, 0, 0.8); 
+    transition: transform 0.5s;
+}
+.reviews { 
+    max-width: 500px; 
+    margin: 20px auto; 
+} 
+.review { 
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(55, 0, 0, 0.621);
+    border: 1px solid #ddd; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border-radius: 5px; 
+}
+.review b
+{
+    justify-content: flex-start;
+    margin: 10px;
+}
+.review p
+{
+    justify-content: flex-start;
+    
+}
 
-@media (max-width: 800px) { 
+/* МЕДИА-ЗАПРОСЫ */
+@media (max-width: 769px) { 
     .nav-links { 
         display: none; 
         flex-direction: column; 
@@ -289,11 +364,13 @@ nav {
         top: 33px; 
         left: 0; 
         background-color: #333; 
-        margin-top: 0% ;
+        margin-top: 0%;
+        padding-bottom: 1%;
     } 
     .nav-links li { 
         text-align: center; 
-        margin: 10px 0;
+        margin: 5px;
+        
     } 
     .menu-toggle { 
         display: flex; 
@@ -301,6 +378,7 @@ nav {
     .nav-links.show { 
         display: flex;
     }
+
 }
 /* Медиа-запрос для экранов шириной до 1200px */
 @media (max-width: 1200px) {
@@ -311,7 +389,7 @@ nav {
         font-size: 30px;
     }
     h3{
-        font-size: 20px;
+        font-size: 19px;
     }
     b{
         font-size: 20px;
@@ -321,7 +399,7 @@ nav {
 /* Медиа-запрос для экранов шириной до 992px */
 @media (max-width: 992px) {
     body {
-        font-size: 15px;
+        font-size: 16px;
     }
     h1{
         font-size: 25px;
@@ -332,36 +410,59 @@ nav {
     b{
         font-size: 19px;
     }
+    
 }
 
 /* Медиа-запрос для экранов шириной до 768px */
 @media (max-width: 768px) {
     body {
-        font-size: 13px;
+        font-size: 16px;
     }
     h1{
-        font-size: 20px;
+        font-size: 22px;
     }
     h3{
-        font-size: 15px;
+        font-size: 16px;
     }
     b{
-        font-size: 16px;
+        font-size: 19px;
+    }
+    div.background {
+        left: 27%;
+        top: 30%;
+        width:40%
     }
 }
 
 /* Медиа-запрос для экранов шириной до 576px */
 @media (max-width: 576px) {
     body {
-        font-size: 12px;
+        font-size: 16px;
     }
     h1{
-        font-size: 19px;
+        font-size: 22px;
     }
     h3{
-        font-size: 14px;
+        font-size: 16px;
     }
     b{
-        font-size: 15px;
+        font-size: 19px;
+    }
+    div.background {
+        left: 27%;
+        top: 30%;
+        width:40%
+    }
+    #about{
+        background: linear-gradient(to left, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8)), url("HellsingAlucard.jpg");
+        background-repeat: no-repeat;
+    background-size:cover; 
+    background-position: unset;
+    background-attachment:fixed;
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 600;
+    font-style: normal;
+    /* font-size: 20px; */
+    min-height: 100vh;
     }
 }
