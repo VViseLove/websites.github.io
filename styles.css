@@ -391,6 +391,9 @@ button:hover {
     b{
         font-size: 20px;
     }
+    div.background {
+        width:35%
+    }
 }
 
 /* Медиа-запрос для экранов шириной до 992px */
@@ -407,7 +410,9 @@ button:hover {
     b{
         font-size: 19px;
     }
-    
+    div.background {
+        width:35%
+    }
 }
 
 /* Медиа-запрос для экранов шириной до 768px */
@@ -425,9 +430,21 @@ button:hover {
         font-size: 19px;
     }
     div.background {
-        left: 27%;
+        left: 22%;
         top: 30%;
-        width:40%
+        width:50%
+    }
+    #about{
+        background: linear-gradient(to left, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.8)), url("HellsingAlucard.jpg");
+        background-repeat: no-repeat;
+    background-size:cover; 
+    background-position: unset;
+    background-attachment:fixed;
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 600;
+    font-style: normal;
+    /* font-size: 20px; */
+    min-height: 100vh;
     }
 }
 
@@ -446,12 +463,12 @@ button:hover {
         font-size: 19px;
     }
     div.background {
-        left: 27%;
+        left: 22%;
         top: 30%;
-        width:40%
+        width:50%
     }
     #about{
-        background: linear-gradient(to left, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8)), url("HellsingAlucard.jpg");
+        background: linear-gradient(to left, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.8)), url("HellsingAlucard.jpg");
         background-repeat: no-repeat;
     background-size:cover; 
     background-position: unset;
