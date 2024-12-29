@@ -1,25 +1,33 @@
  body {
     font-family: "Cormorant Unicase", serif;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
     margin: 0px;
     scroll-behavior: smooth;
+    font-size: 16px;
 }
- h1
- {
+h1
+{
     font-family: "Cormorant Unicase", serif;
     font-weight: 700;
     font-style: normal;
     font-size: 35px;
- }
- /* *
-{
-    color: whitesmoke;
-    opacity: 1;
-} */
+}
+h3{
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+}
+b{
+    font-size: 21px;
+}
 p{
     text-align: center;
 }
+
+
+
  #about
  {
     color: whitesmoke;
@@ -32,7 +40,7 @@ p{
     font-family: "Cormorant Unicase", serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 20px;
+    /* font-size: 20px; */
     min-height: 100vh;
     /* position: sticky; */
     z-index: 0; 
@@ -43,9 +51,10 @@ p{
     position: absolute;
     justify-content: center;
     width: 30%;
+    height:max-content;
     top: 20%;
     left:10%;
-    border: 5%;
+    border: 3px;
     border-radius: 10px; 
     padding: 3%;
  }
@@ -132,12 +141,14 @@ p{
 
     background-color: rgba(69, 0, 0, 0.723);
 
-    border: 5%;
+    border: 5px;
     border-radius: 8px; 
     padding: 1.5%;
     margin: 1.5%;
     padding-bottom: 0.5%;
     margin-top: 0px;
+    margin-right: 0px;
+    transition: transform 0.3s, background-color 0.3s;
 }
 .gif
 {
@@ -154,9 +165,7 @@ p{
     text-wrap:wrap;
 
 }
-b{
-    font-size: 25px;
-}
+
 #TechnologiesSECTION
 {
     background-color: #2b2b2b;
@@ -172,7 +181,7 @@ b{
 #TechnologiesSECTION b
 {
     font-weight:700;
-    font-size: 22px;
+    /* font-size: 22px; */
     color: #ff6347;
 }
 .WeaponsGridContainer {
@@ -256,7 +265,7 @@ nav {
 .nav-links a { 
     color: white; 
     text-decoration: none; 
-    font-size: 1em; } 
+} 
 
 .menu-toggle { 
     display: none; 
@@ -271,9 +280,6 @@ nav {
     margin: 4px 0; 
 } 
 
-    /* .nav-links.show { 
-        display: flex; 
-    } */
 @media (max-width: 800px) { 
     .nav-links { 
         display: none; 
@@ -294,5 +300,68 @@ nav {
     } 
     .nav-links.show { 
         display: flex;
+    }
+}
+/* Медиа-запрос для экранов шириной до 1200px */
+@media (max-width: 1200px) {
+    body {
+        font-size: 16px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    b{
+        font-size: 20px;
+    }
+}
+
+/* Медиа-запрос для экранов шириной до 992px */
+@media (max-width: 992px) {
+    body {
+        font-size: 15px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 17px;
+    }
+    b{
+        font-size: 19px;
+    }
+}
+
+/* Медиа-запрос для экранов шириной до 768px */
+@media (max-width: 768px) {
+    body {
+        font-size: 13px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    b{
+        font-size: 16px;
+    }
+}
+
+/* Медиа-запрос для экранов шириной до 576px */
+@media (max-width: 576px) {
+    body {
+        font-size: 12px;
+    }
+    h1{
+        font-size: 19px;
+    }
+    h3{
+        font-size: 14px;
+    }
+    b{
+        font-size: 15px;
     }
 }
