@@ -30,9 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }); 
     }); 
 
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('feedback-form');
     const reviewsContainer = document.getElementById('reviews');
@@ -89,32 +86,3 @@ document.addEventListener('DOMContentLoaded', function () {
     // Получаем отзывы при загрузке страницы
     fetchReviews();
 });
-
-
-
-// document.addEventListener('DOMContentLoaded', function () {
-//     const form = document.getElementById('feedback-form');
-
-//     form.addEventListener('submit', function (event) {
-//         event.preventDefault(); // Предотвращаем стандартное действие отправки формы
-
-//         const formData = new FormData(form);
-
-//         fetch('https://getform.io/f/bdrrpkmb', {
-//             method: 'POST',
-//             body: formData
-//         })
-//         .then(response => {
-//             if (response.ok) {
-//                 alert('Спасибо за ваш отзыв!');
-//                 form.reset();
-//             } else {
-//                 alert('Произошла ошибка, попробуйте ещё раз.');
-//             }
-//         })
-//         .catch(error => {
-//             console.error('Error:', error);
-//             alert('Произошла ошибка, попробуйте ещё раз.');
-//         });
-//     });
-// });
