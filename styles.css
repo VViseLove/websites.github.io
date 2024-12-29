@@ -22,9 +22,7 @@ h3{
 b{
     font-size: 21px;
 }
-p{
-    text-align: center;
-}
+
  #about
  {
     color: whitesmoke;
@@ -42,6 +40,9 @@ p{
     /* position: sticky; */
     z-index: 0; 
  }
+ #about p{
+    text-align: center;
+}
  div.background 
  {
     display: flex;
@@ -115,6 +116,9 @@ p{
     padding-bottom:2.5%;
     z-index: 1;
 } 
+#HeroesSECTION p{
+    text-align: center;
+}
 #HeroesDIV
 {
     display:flex;
@@ -174,6 +178,9 @@ p{
     padding-top: 0px;
     z-index: 2;
     padding-bottom: 5%;
+}
+#TechnologiesSECTION p{
+    text-align: center;
 }
 #TechnologiesSECTION b
 {
